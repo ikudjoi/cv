@@ -14,7 +14,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{Roope} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{Ilkka} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 % Locale
 \def \langname {finnish}
@@ -44,14 +44,14 @@
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\firstname{Robert} % Your first name
-\familyname{Sirviö} % Your last name
+\firstname{Ilkka} % Your first name
+\familyname{Kudjoi} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
 \title{Curriculum Vitae}
 \address{\haddress}{\pobox}
-\mobile{+358 50 300 2509}
-\email{robert.sirvio@alumni.helsinki.fi}
+\mobile{+358 44 554 5552}
+\email{ilkka@kudjoi.fi}
 \photo[80pt][1pt]{pictures/CV_photo.png} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 \personalinfo{\hpinfo}
 \quote{\hquote}
@@ -72,9 +72,9 @@
 %\section{Utbildning}
 %@@@@@@@@@@@@@@@@@@
 
-\cventry{2014--2016}{\mdeg}{\uni}{}{}{}
-\cventry{2010--2014}{\bdeg}{\uni}{}{}{}
-\cventry{2009--2010}{\army}{\armybase}{}{}{}
+\cventry{2002--2007}{\mdeg}{\uni}{}{}{}
+\cventry{2006--2007}{\eex}{\uniw}{}{}{}
+\cventry{2001--2002}{\army}{\armybase}{}{}{}
 
 %@@@LOCALIZATION@@@
 %\section{Master's thesis}
@@ -83,9 +83,9 @@
 %@@@@@@@@@@@@@@@@@@
 
 \cvitem{\bfseries \topic}{\mthesistitle}
-\cvitem{\bfseries \supervisor}{Samuli Siltanen, Gillis Danielsen}
+\cvitem{\bfseries \supervisor}{Esko Valkeila, Samuel Aalto}
 \cvitem{\bfseries \descr}{\mthesiscontent}
-\cvitem{\bfseries \ethesis}{\href{https://helda.helsinki.fi/handle/10138/162968}{{\color{blue}https://helda.helsinki.fi/handle/10138/162968}}}
+\cvitem{\bfseries \ethesis}{\href{http://web.lib.aalto.fi/fi/oa/db/INSSI/?cmd=get&id=35549}{{\color{blue}http://web.lib.aalto.fi/fi/oa/db/INSSI/?cmd=get\&id=35549}}}
 
 %----------------------------------------------------------------------------------------
 %	EMPLOYMENT
@@ -97,15 +97,19 @@
 %\section{Arbetserfarenhet}
 %@@@@@@@@@@@@@@@@@@
 
-\cventry{02/2016--}{Full stack developer}{\textsc{Analyse²}}{}{}{\analysecontent}
+\cventry{03/2010--}{Team Lead}{\textsc{Analyse²}}{}{}{\analysetlcontent}
 
-\cventry{06/2015--09/2015}{Portfolio management associate}{\textsc{Estlander \& Partners OY}}{}{}{\epcontent}
+\cventry{12/2015--03/2018}{Product Owner}{\textsc{Analyse²}}{}{}{\analysepocontent}
 
-\cventry{11/2014--02/2016}{Junior full stack developer}{\textsc{Valuatum oy}}{}{}{\valuatumcontent}
+\cventry{01/2008--02/2010}{Software Designer}{\textsc{Analyse²}}{}{}{\analysesdcontent}
 
-\cventry{09/2014--11/2014}{\assari}{\textsc{\uni}}{}{}{\assaricontent}
+\cventry{03/2007--12/2007}{\recas}{\textsc{\uni}}{}{}{\dippacontent}
 
-\cventry{01/2010--12/2014}{\tutor}{}{}{}{\tutorcontent}
+\cventry{09/2003--12/2005}{\assari}{\textsc{\uni}}{}{}{\assaricontent}
+
+\cventry{05/2004--08/2004}{\recas}{\textsc{\uni}}{}{}{\summercontent}
+
+\cventry{05/2003--08/2003}{\recas}{\textsc{\uni}}{}{}{}
 
 %----------------------------------------------------------------------------------
 %	PROGRAMMING SKILLS
@@ -118,13 +122,13 @@
 %@@@@@@@@@@@@@@@@@@
 
 \cvdoubleitem[.3cm]{\langscript}
-             {Java, C\#, JavaScript, TypeScript, HTML, CSS, SQL, Bash, MATLAB, \LaTeX}
+             {C\#, SQL, HTML, CSS, Ruby, Bash, \LaTeX}
              {\techframe}
-             {Spring, JUnit, Mockito, .NET, Moq, AngularJS, mobx, gulp, webpack, ag-grid, Protractor, Cucumber, Robot Framework, AWS, git, SVN}
+             {.NET, AWS, CloudFormation, Git, SVN, SSIS, SSAS}
 \cvdoubleitem[.3cm]{OS}
              {Linux, Windows}
              {\db}
-             {MySQL,PostgreSQL, MSSQL}
+             {MSSQL, Snowflake}
 \cvitem{\methods}{\methodscontent}
 
 %----------------------------------------------------------------------------------------
@@ -137,9 +141,9 @@
 %\section{Språkkunskaper}
 %@@@@@@@@@@@@@@@@@@
 
-\cvitemwithcomment{\bfseries \native}{\mdseries \swedish}{}
-\cvitemwithcomment{\bfseries \excellent}{\mdseries \finnish{} \english}{}
-\cvitemwithcomment{\bfseries \basics}{\mdseries \japanese{} \german}{}
+\cvitemwithcomment{\bfseries \native}{\mdseries \finnish}{}
+\cvitemwithcomment{\bfseries \good}{\mdseries \english{} \german{} \swedish}{}
+\cvitemwithcomment{\bfseries \basics}{\mdseries \russian}{}
 
 %----------------------------------------------------------------------------------------
 %	LINKS
@@ -152,24 +156,9 @@
 %@@@@@@@@@@@@@@@@@@
 
 \cventry{}{}{}{
- \href{http://plhrja.github.io/Pro-gradu_Robert_Sirvio.pdf}{{\color{blue}\mthesis}}}{}{}
+ \href{http://ikudjoi.github.io/Thesis_Ilkka_Kudjoi.pdf}{{\color{blue}\mthesis}}}{}{}
 
 \cventry{}{}{}{
- \href{http://plhrja.github.io/BinModKandi.pdf}{{\color{blue}\bthesis}}}{}{}
- 
- \cventry{}{}{}{
- \href{http://fi.linkedin.com/in/rsirvio}{{\color{blue}\linkedin}}}{}{}
-
-%\cventry{}{}{}{
-% \href{https://github.com/lybeck/glottal-inversion}{{\color{blue}Äänenmuodostuksen inversion projekti ja siihen liittyvät MATLAB-tiedostot.}}
-%}{}{}
-
-%\cventry{}{}{}{
-% \href{https://t-llybeck.users.cs.helsinki.fi/mosedb/login.jsp}{{\color{blue}Log in sivu elokuvatietokannan verkkosovellukseen (username, password: guest)}}
-%}{}{}
-
-%\cventry{}{}{}{
-% \href{http://finland.e-research.fi/FreeTrial.action?lang=en}{{\color{blue}\freetrial}}}{}{}
-
+ \href{https://www.linkedin.com/in/ilkkakudjoi/}{{\color{blue}\linkedin}}}{}{}
 
 \end{document}
