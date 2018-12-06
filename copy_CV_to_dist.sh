@@ -1,13 +1,12 @@
 #!/bin/bash
 #
-# Helper script for copying the current cv to the github.io folder.
+# Helper script for copying the current cv to the dist folder.
 
 echo "Starting the copy process..."
 
 # Stop execution on error.
 set -e
 
-#DEST="/home/ikudjoi/git/ikudjoi.github.io/"
 DEST="./dist/"
 SUFFIX=
 
@@ -36,7 +35,7 @@ if [ $# -ne 1 ]; then
 fi
 
 if [ -z $SUFFIX ]; then
-	echo "USAGE: copy_CV_to_github.io.sh LANG-FLAG DOCUMENT"
+	echo "USAGE: copy_CV_to_dist.sh LANG-FLAG DOCUMENT"
 	echo "	LANG-FLAGS:"
 	echo "		-fin|--finnish: 'fi' suffix"
 	echo "		-en|--english: 'en' suffix"
@@ -45,7 +44,7 @@ fi
 
 echo "Copying $1 to $DEST with suffix $SUFFIX"
 
-TRG=$(echo $1 | sed "s/.pdf$/_$SUFFIX.pdf/")
+TRG=$(echo $1 | sed "s/.pdf$/_Ilkka_Kudjoi_$SUFFIX.pdf/")
 TRG=$DEST$TRG
 
 echo $TRG
