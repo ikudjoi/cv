@@ -9,6 +9,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+RUN luaotfload-tool --update
+
 # The rest of the project files
 COPY . .
 
