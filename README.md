@@ -4,7 +4,7 @@ The Curriculum Vitae update wizard of Ilkka Kudjoi. Forked originally from Rober
 
 ### Scripts  ###
 
-* build.sh **
+* *build.sh*
     * Builds and runs a Docker container with texlive-full installed and uses it to compile the CV document. If parameter -d or --deploy is given, it will push the new pdf's to github.io. 
 * *doc/script/change_locale.sh*
     * Used to change localization of the CV.
