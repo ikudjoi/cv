@@ -1,17 +1,9 @@
-FROM debian:9
-
-# Project files go here
-WORKDIR /cv
+FROM debian:buster-slim
 
 RUN apt-get update \
-    && apt-get install -y \
-    texlive-full \
+    && apt-get install -y texlive-full \
     && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && luaotfload-tool --update
 
-RUN luaotfload-tool --update
-
-# The rest of the project files
-COPY . .
-
-CMD ["/bin/bash"]
+WORKDIR /doc
